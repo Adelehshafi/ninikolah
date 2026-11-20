@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FF6A3D">
+<title>Kolahak</title>
+<meta name="description" content="Kolahak: soft knits, cotton bucket hats and straw sun hats for children, sized by head circumference.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;600;700;800&family=Vazirmatn:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>
+  (function () {
+    var l = 'fa', th = null;
+    try { var p = JSON.parse(localStorage.getItem('kolahak-prefs') || '{}'); if (p.lang === 'en') l = 'en'; if (p.theme === 'dark' || p.theme === 'light') th = p.theme; } catch (e) { /* storage blocked */ }
+    document.documentElement.lang = l;
+    document.documentElement.dir = l === 'fa' ? 'rtl' : 'ltr';
+    if (th) document.documentElement.setAttribute('data-theme', th);
+  })();
+</script>
+<style>html,body{margin:0}img{max-width:100%}</style>
+</head>
+<body>
+<a class="sr" href="#main" data-action="skip">Skip to content</a>
+<div class="announce" id="announce"></div>
+<header class="site-header" id="siteHeader"></header>
+<main id="main" tabindex="-1"></main>
+<footer class="site-footer" id="siteFooter"></footer>
+<div id="layer"></div>
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<noscript><p style="padding:24px;text-align:center">Kolahak needs JavaScript to run.</p></noscript>
+<script src="i18n.js"></script>
+<script src="data.js"></script>
+<script src="hat3d.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
