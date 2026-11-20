@@ -1,5 +1,5 @@
-/* Kolahak demo catalogue: original products, sample prices in toman */
-window.KOLAHAK = {
+/* Ninikolah demo catalogue: original products, sample prices in toman */
+window.NINIKOLAH = {
   sizes: [
     { id: '0-6m', fa: '۰ تا ۶ ماه', en: '0–6 months', cm: [36, 42] },
     { id: '6-12m', fa: '۶ تا ۱۲ ماه', en: '6–12 months', cm: [42, 46] },

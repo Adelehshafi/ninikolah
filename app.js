@@ -1,7 +1,7 @@
-/* Kolahak storefront demo: hash-routed vanilla JS */
+/* Ninikolah storefront demo: hash-routed vanilla JS */
 (function () {
   'use strict';
-  var D = window.KOLAHAK, T = window.I18N;
+  var D = window.NINIKOLAH, T = window.I18N;
   var $ = function (s, r) { return (r || document).querySelector(s); };
   var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
 
@@ -10,16 +10,16 @@
     get: function (k, d) { try { var v = localStorage.getItem(k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
     set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) { /* storage blocked */ } }
   };
-  var prefs = store.get('kolahak-prefs', {});
+  var prefs = store.get('ninikolah-prefs', {});
   var lang = document.documentElement.lang === 'en' ? 'en' : 'fa';
   var S = {
-    cart: store.get('kolahak-cart', []), wish: store.get('kolahak-wish', []), wrap: store.get('kolahak-wrap', false),
+    cart: store.get('ninikolah-cart', []), wish: store.get('ninikolah-wish', []), wrap: store.get('ninikolah-wrap', false),
     filters: { cat: [], age: [], season: [], fam: [] }, sort: 'rec',
     hero: { pid: 'pompom', ci: 0 }, cardColor: {}, finderCm: 47, giftSize: '1-2y',
     pdp: { ci: 0, size: null, qty: 1 }, order: null, route: 'home', param: ''
   };
-  try { S.order = JSON.parse(sessionStorage.getItem('kolahak-order') || 'null'); } catch (e) { S.order = null; }
-  function save() { store.set('kolahak-cart', S.cart); store.set('kolahak-wish', S.wish); store.set('kolahak-wrap', S.wrap); }
+  try { S.order = JSON.parse(sessionStorage.getItem('ninikolah-order') || 'null'); } catch (e) { S.order = null; }
+  function save() { store.set('ninikolah-cart', S.cart); store.set('ninikolah-wish', S.wish); store.set('ninikolah-wrap', S.wrap); }
 
   /* ---------- text & numbers ---------- */
   function t(k, vars) {
@@ -469,7 +469,7 @@
       '<section class="help-sec" id="h-ship"><h2>' + t('help.ship') + '</h2><p>' + t('help.shipT') + '</p></section>' +
       '<section class="help-sec" id="h-ret"><h2>' + t('help.ret') + '</h2><p>' + t('help.retT') + '</p></section>' +
       '<section class="help-sec" id="h-faq"><h2>' + t('help.faq') + '</h2><div class="acc">' + faq + '</div></section>' +
-      '<section class="help-sec" id="h-contact"><h2>' + t('help.contact') + '</h2><p>' + t('help.contactT') + '</p><div class="copy-row"><span style="font-weight:700">' + t('help.email') + ':</span><code id="mailText">hello@kolahak.example</code><button class="btn btn-ghost" data-action="copy" data-target="mailText">' + ic('copy') + t('help.copy') + '</button></div></section>' +
+      '<section class="help-sec" id="h-contact"><h2>' + t('help.contact') + '</h2><p>' + t('help.contactT') + '</p><div class="copy-row"><span style="font-weight:700">' + t('help.email') + ':</span><code id="mailText">hello@ninikolah.example</code><button class="btn btn-ghost" data-action="copy" data-target="mailText">' + ic('copy') + t('help.copy') + '</button></div></section>' +
       '</div></div></div>';
   }
   function viewWish() {
@@ -612,7 +612,7 @@
   }
 
   /* ---------- actions ---------- */
-  function setLang(l) { lang = l; prefs.lang = l; store.set('kolahak-prefs', prefs); document.documentElement.lang = l; document.documentElement.dir = l === 'fa' ? 'rtl' : 'ltr'; render(true); }
+  function setLang(l) { lang = l; prefs.lang = l; store.set('ninikolah-prefs', prefs); document.documentElement.lang = l; document.documentElement.dir = l === 'fa' ? 'rtl' : 'ltr'; render(true); }
   function toggleWish(id) {
     var i = S.wish.indexOf(id), on = i < 0, p = P(id);
     if (on) S.wish.push(id); else S.wish.splice(i, 1);
@@ -627,7 +627,7 @@
     'close-layer': function () { closeLayer(); },
     'close-layer-go': function (el) { closeLayer(true); var to = '#' + el.getAttribute('data-to'); if (location.hash === to) render(); else location.hash = to; },
     lang: function () { setLang(lang === 'fa' ? 'en' : 'fa'); },
-    theme: function () { var d = !isDark(); document.documentElement.setAttribute('data-theme', d ? 'dark' : 'light'); prefs.theme = d ? 'dark' : 'light'; store.set('kolahak-prefs', prefs); var wasMenu = layerKind === 'menu'; $('#siteHeader').innerHTML = headerHTML(); $('#siteFooter').innerHTML = footerHTML(); updateCounts(); if (wasMenu) openMenu(); },
+    theme: function () { var d = !isDark(); document.documentElement.setAttribute('data-theme', d ? 'dark' : 'light'); prefs.theme = d ? 'dark' : 'light'; store.set('ninikolah-prefs', prefs); var wasMenu = layerKind === 'menu'; $('#siteHeader').innerHTML = headerHTML(); $('#siteFooter').innerHTML = footerHTML(); updateCounts(); if (wasMenu) openMenu(); },
     'scroll-to': function (el) { var tg = document.getElementById(el.getAttribute('data-to')); if (tg) tg.scrollIntoView({ behavior: 'smooth', block: 'start' }); },
     'hero-model': function (el) {
       var id = el.getAttribute('data-id'), p = P(id); if (!p) return;
@@ -704,8 +704,8 @@
       ['name', 'phone', 'city', 'street', 'postal', 'note'].forEach(function (k) { var el = f.elements[k]; if (el) CO[k] = el.value; });
       if (!validate(f)) { $('#coErr').hidden = false; var b = $('.fld.bad input', f); if (b) b.focus(); return; }
       var tt = totals(CO.prov === '0' ? CO.ship : 'post');
-      S.order = { no: 'KL-' + String(Math.floor(100000 + Math.random() * 900000)), total: tt.total, name: CO.name.trim(), city: CO.city.trim(), prov: CO.prov };
-      try { sessionStorage.setItem('kolahak-order', JSON.stringify(S.order)); } catch (e) { /* ignore */ }
+      S.order = { no: 'NK-' + String(Math.floor(100000 + Math.random() * 900000)), total: tt.total, name: CO.name.trim(), city: CO.city.trim(), prov: CO.prov };
+      try { sessionStorage.setItem('ninikolah-order', JSON.stringify(S.order)); } catch (e) { /* ignore */ }
       S.cart = []; S.wrap = false; save(); location.hash = '#done';
     }
   };
@@ -746,6 +746,6 @@
   window.addEventListener('scroll', function () { var h = $('#siteHeader'); if (h) h.classList.toggle('scrolled', window.scrollY > 8); }, { passive: true });
   if (window.matchMedia) { var mq = window.matchMedia('(prefers-color-scheme: dark)'); var onMq = function () { if (!document.documentElement.getAttribute('data-theme')) { $('#siteHeader').innerHTML = headerHTML(); $('#siteFooter').innerHTML = footerHTML(); updateCounts(); } }; if (mq.addEventListener) mq.addEventListener('change', onMq); }
 
-  window.__kolahak = { S: S, render: render, viewers: function () { return viewers; } };
+  window.__ninikolah = { S: S, render: render, viewers: function () { return viewers; } };
   render();
 })();

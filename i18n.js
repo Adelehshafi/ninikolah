@@ -1,7 +1,7 @@
-/* Kolahak UI text, Persian and English */
+/* نی‌نی کلاه UI text, Persian and English */
 window.I18N = {
   fa: {
-    brand: 'کلاهک', tagline: 'کلاه‌هایی برای کله‌های کوچک',
+    brand: 'نی‌نی کلاه', tagline: 'کلاه‌هایی برای کله‌های کوچک',
     announce: 'ارسال رایگان سفارش‌های بالای ۱٬۵۰۰٬۰۰۰ تومان · بسته‌بندی هدیه رایگان',
     'nav.shop': 'فروشگاه', 'nav.knit': 'بافتنی‌ها', 'nav.summer': 'تابستانی', 'nav.size': 'راهنمای سایز', 'nav.about': 'دربارهٔ ما', 'nav.help': 'راهنمای خرید',
     'a.search': 'جستجو', 'a.cart': 'سبد خرید', 'a.wish': 'علاقه‌مندی‌ها', 'a.menu': 'منو', 'a.close': 'بستن', 'a.theme': 'تغییر حالت روشن و تاریک', 'a.lang': 'English', 'a.home': 'صفحهٔ اصلی',
@@ -24,7 +24,7 @@ window.I18N = {
     'finder.tip': 'اگر بین دو سایز بود، سایز بزرگ‌تر را بردارید؛ لبهٔ برگردان را می‌شود تا زد.', 'finder.out': 'این اندازه خارج از سایزهای ماست. با ما تماس بگیرید.',
     'gift.title': 'ست هدیهٔ تولد', 'gift.sub': 'بافت پوم‌پوم گلبهی و بافت خرسی عسلی در یک جعبهٔ هدیه، با کارت پیام دست‌نویس.', 'gift.save': '۱۰٪ تخفیف ست', 'gift.cta': 'افزودن ست به سبد', 'gift.added': 'ست هدیه به سبد اضافه شد', 'gift.size': 'سایز ست', 'gift.was': 'قیمت جداگانه',
     'news.title': 'اولین نفر باشید', 'news.sub': 'کالکشن جدید و تخفیف‌های فصلی را زودتر از همه ببینید. ماهی یک ایمیل، نه بیشتر.', 'news.ph': 'ایمیل شما', 'news.btn': 'عضویت', 'news.ok': 'ممنون! ایمیل شما ثبت شد (نسخهٔ نمایشی).', 'news.bad': 'لطفاً یک ایمیل درست بنویسید.',
-    'foot.shop': 'فروشگاه', 'foot.help': 'راهنما', 'foot.brand': 'کلاهک', 'foot.demo': 'این وب‌سایت یک نسخهٔ نمایشی است؛ محصولات، قیمت‌ها و پرداخت نمونه هستند.', 'foot.made': 'طراحی‌شده با حوصله برای کله‌های کوچک',
+    'foot.shop': 'فروشگاه', 'foot.help': 'راهنما', 'foot.brand': 'نی‌نی کلاه', 'foot.demo': 'این وب‌سایت یک نسخهٔ نمایشی است؛ محصولات، قیمت‌ها و پرداخت نمونه هستند.', 'foot.made': 'طراحی‌شده با حوصله برای کله‌های کوچک',
     'foot.ship': 'ارسال و تعویض', 'foot.faq': 'سؤال‌های پرتکرار', 'foot.contact': 'تماس با ما', 'foot.wish': 'علاقه‌مندی‌ها', 'foot.dark': 'حالت تاریک', 'foot.light': 'حالت روشن',
     'shop.title': 'همهٔ کلاه‌ها', 'shop.count': '{n} کلاه', 'shop.filters': 'فیلترها', 'shop.empty': 'کلاهی با این فیلترها پیدا نشد.', 'shop.reset': 'پاک کردن فیلترها', 'shop.show': 'نمایش {n} کلاه',
     'f.cat': 'نوع کلاه', 'f.age': 'سن', 'f.season': 'فصل', 'f.color': 'رنگ', 'season.winter': 'زمستانی', 'season.summer': 'تابستانی', 'season.all': 'چهارفصل',
@@ -45,10 +45,10 @@ window.I18N = {
     'co.shipT': 'روش ارسال', 'co.s1': 'پیک یک‌روزه (فقط تهران)', 'co.s2': 'پست پیشتاز (۲ تا ۴ روز کاری)', 'co.pay': 'پرداخت', 'co.payNote': 'این نسخهٔ نمایشی است و پولی پرداخت نمی‌شود. در نسخهٔ نهایی این دکمه به درگاه پرداخت بانکی وصل می‌شود.',
     'co.place': 'ثبت سفارش (نمایشی)', 'co.sum': 'خلاصهٔ سفارش', 'co.req': 'این بخش را پر کنید', 'co.badPhone': 'شمارهٔ موبایل باید ۱۱ رقم و با ۰۹ شروع شود', 'co.badPostal': 'کد پستی باید ۱۰ رقم باشد', 'co.fix': 'لطفاً بخش‌های قرمز را درست کنید', 'co.tehranOnly': 'پیک فقط برای تهران فعال است', 'co.freeShip': 'رایگان', 'co.note': 'توضیح برای سفارش (اختیاری)',
     'done.title': 'سفارش شما ثبت شد', 'done.no': 'شمارهٔ سفارش', 'done.sub': 'این یک سفارش نمایشی است. در نسخهٔ نهایی، پیامک تأیید و کد رهگیری برای مشتری فرستاده می‌شود.', 'done.cta': 'برگشت به فروشگاه', 'done.to': 'ارسال به',
-    'size.title': 'راهنمای سایز', 'size.sub': 'سایزهای کلاهک بر اساس دور سر است، نه فقط سن. چون بچه‌های هم‌سن اندازهٔ سر متفاوتی دارند.',
+    'size.title': 'راهنمای سایز', 'size.sub': 'سایزهای نی‌نی کلاه بر اساس دور سر است، نه فقط سن. چون بچه‌های هم‌سن اندازهٔ سر متفاوتی دارند.',
     'size.how': 'چطور اندازه بگیریم؟', 'size.h1': 'متر خیاطی نرم را از وسط پیشانی، کمی بالای ابروها شروع کنید.', 'size.h2': 'متر را از بالای گوش‌ها و برجسته‌ترین قسمت پشت سر رد کنید.', 'size.h3': 'عدد را بخوانید و یک سانتی‌متر برای راحتی اضافه کنید.',
     'size.age': 'سن تقریبی', 'size.cm': 'دور سر', 'size.models': 'مدل‌های موجود', 'size.tip': 'کلاه‌های بافتنی کش می‌آیند و تا یک سانتی‌متر بزرگ‌تر را هم پوشش می‌دهند. کلاه‌های حصیری کش نمی‌آیند؛ دقیق‌تر اندازه بگیرید.',
-    'about.title': 'دربارهٔ کلاهک', 'about.lead': 'کلاهک از یک سؤال ساده شروع شد: چرا پیدا کردن یک کلاه نرم و اندازه برای بچه این‌قدر سخت است؟',
+    'about.title': 'دربارهٔ نی‌نی کلاه', 'about.lead': 'نی‌نی کلاه از یک سؤال ساده شروع شد: چرا پیدا کردن یک کلاه نرم و اندازه برای بچه این‌قدر سخت است؟',
     'about.p1': 'ما کلاه‌ها را با نخ‌های نرم و رنگ‌های شاد طراحی می‌کنیم و هر مدل را روی سرهای واقعی، از نوزاد تا دوازده‌ساله، امتحان می‌کنیم تا روی پیشانی خط نیندازد و روی گوش‌ها بماند.',
     'about.p2': 'هر کلاه در یک کارگاه کوچک دوخته و یکی‌یکی بازبینی می‌شود. بسته‌بندی‌ها بدون پلاستیک است و جعبه‌ها دوباره قابل استفاده‌اند.',
     'about.v1': 'نرم روی پوست', 'about.v1s': 'پنبهٔ ارگانیک، مرینو و آستر بدون خارش', 'about.v2': 'سایز دقیق', 'about.v2s': 'شش سایز بر اساس دور سر', 'about.v3': 'ماندگار', 'about.v3s': 'دوخت دوبل که به بچهٔ بعدی هم می‌رسد',
@@ -64,7 +64,7 @@ window.I18N = {
     toman: 'تومان', back: 'برگشت', 'crumb.home': 'خانه', 'nf.title': 'این صفحه پیدا نشد', 'nf.cta': 'برگشت به صفحهٔ اصلی', 'demo': 'نمایشی'
   },
   en: {
-    brand: 'Kolahak', tagline: 'Hats for little heads',
+    brand: 'Ninikolah', tagline: 'Hats for little heads',
     announce: 'Free shipping on orders over 1,500,000 Toman · Free gift wrapping',
     'nav.shop': 'Shop', 'nav.knit': 'Knits', 'nav.summer': 'Summer', 'nav.size': 'Size guide', 'nav.about': 'Our story', 'nav.help': 'Help',
     'a.search': 'Search', 'a.cart': 'Bag', 'a.wish': 'Wishlist', 'a.menu': 'Menu', 'a.close': 'Close', 'a.theme': 'Switch light and dark mode', 'a.lang': 'فارسی', 'a.home': 'Home',
@@ -87,7 +87,7 @@ window.I18N = {
     'finder.tip': 'Between two sizes? Go up one; the cuff folds to fit.', 'finder.out': 'That’s outside our size range. Get in touch and we’ll help.',
     'gift.title': 'Birthday gift set', 'gift.sub': 'The blush Cloud Pompom and the honey Teddy Ear beanie in one gift box, with a handwritten card.', 'gift.save': '10% off the set', 'gift.cta': 'Add the set to bag', 'gift.added': 'Gift set added to your bag', 'gift.size': 'Set size', 'gift.was': 'Bought separately',
     'news.title': 'Be the first to know', 'news.sub': 'See new collections and seasonal offers before anyone else. One email a month, no more.', 'news.ph': 'Your email', 'news.btn': 'Sign up', 'news.ok': 'Thanks! You’re on the list (demo).', 'news.bad': 'Please enter a valid email.',
-    'foot.shop': 'Shop', 'foot.help': 'Help', 'foot.brand': 'Kolahak', 'foot.demo': 'This website is a demo. Products, prices and payment are samples.', 'foot.made': 'Designed with care for little heads',
+    'foot.shop': 'Shop', 'foot.help': 'Help', 'foot.brand': 'Ninikolah', 'foot.demo': 'This website is a demo. Products, prices and payment are samples.', 'foot.made': 'Designed with care for little heads',
     'foot.ship': 'Shipping & exchanges', 'foot.faq': 'FAQ', 'foot.contact': 'Contact', 'foot.wish': 'Wishlist', 'foot.dark': 'Dark mode', 'foot.light': 'Light mode',
     'shop.title': 'All hats', 'shop.count': '{n} hats', 'shop.filters': 'Filters', 'shop.empty': 'No hats match these filters.', 'shop.reset': 'Clear filters', 'shop.show': 'Show {n} hats',
     'f.cat': 'Type', 'f.age': 'Age', 'f.season': 'Season', 'f.color': 'Colour', 'season.winter': 'Winter', 'season.summer': 'Summer', 'season.all': 'All seasons',
@@ -108,10 +108,10 @@ window.I18N = {
     'co.shipT': 'Delivery', 'co.s1': 'Next-day courier (Tehran only)', 'co.s2': 'Express post (2–4 working days)', 'co.pay': 'Payment', 'co.payNote': 'This is a demo and no money is taken. In the live shop this button connects to a bank payment gateway.',
     'co.place': 'Place order (demo)', 'co.sum': 'Order summary', 'co.req': 'Please fill this in', 'co.badPhone': 'Use an 11-digit mobile number starting with 09', 'co.badPostal': 'Postal codes have 10 digits', 'co.fix': 'Please fix the fields marked in red', 'co.tehranOnly': 'Courier delivery is for Tehran only', 'co.freeShip': 'Free', 'co.note': 'Order note (optional)',
     'done.title': 'Your order is placed', 'done.no': 'Order number', 'done.sub': 'This is a demo order. In the live shop the customer gets a confirmation text and a tracking code.', 'done.cta': 'Back to the shop', 'done.to': 'Delivering to',
-    'size.title': 'Size guide', 'size.sub': 'Kolahak sizes follow head circumference, not just age, because children the same age have different head sizes.',
+    'size.title': 'Size guide', 'size.sub': 'Ninikolah sizes follow head circumference, not just age, because children the same age have different head sizes.',
     'size.how': 'How to measure', 'size.h1': 'Start a soft tape measure at the middle of the forehead, just above the eyebrows.', 'size.h2': 'Take it over the tops of the ears and around the fullest part of the back of the head.', 'size.h3': 'Read the number and add 1 cm for comfort.',
     'size.age': 'Approx. age', 'size.cm': 'Head', 'size.models': 'Styles available', 'size.tip': 'Knits stretch and fit up to 1 cm larger. Straw hats don’t stretch, so measure carefully.',
-    'about.title': 'About Kolahak', 'about.lead': 'Kolahak started with a simple question: why is it so hard to find a soft hat that actually fits a child?',
+    'about.title': 'About Ninikolah', 'about.lead': 'Ninikolah started with a simple question: why is it so hard to find a soft hat that actually fits a child?',
     'about.p1': 'We design our hats in soft yarns and happy colours and try every style on real heads, from newborns to twelve-year-olds, so it never leaves a line on the forehead and stays over the ears.',
     'about.p2': 'Every hat is sewn in a small workshop and checked one by one. Our packaging is plastic-free and the boxes are made to be reused.',
     'about.v1': 'Soft on skin', 'about.v1s': 'Organic cotton, merino and itch-free linings', 'about.v2': 'A true fit', 'about.v2s': 'Six sizes by head circumference', 'about.v3': 'Made to last', 'about.v3s': 'Double stitching that lasts for the next sibling',

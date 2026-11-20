@@ -1,4 +1,4 @@
-/* Kolahak 3D: a small dependency-free WebGL renderer for knitted, cotton, straw and twill kids' hats.
+/* Ninikolah 3D: a small dependency-free WebGL renderer for knitted, cotton, straw and twill kids' hats.
    Hat3D.create(canvas, opts) -> viewer { setModel, setColors, setView, resetView, zoomBy, render, snapshot, destroy } */
 (function (global) {
   'use strict';
